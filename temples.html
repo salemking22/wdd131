@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temples.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Temple Album</h1>
+    <nav class="menu">
+      <button class="menu-button">&#9776;</button>
+      <div class="dropdown">
+        <a href="temples.html"><strong>Home</strong></a>
+        <a href="Old.html">Old</a>
+        <a href="New.html">New</a>
+        <a href="Large.html">Large</a>
+        <a href="Small.html">Small</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>HOME</h1>
+
+    <figure>
+      <img src="images/England temple.jpg" alt="England Temple" width="300">
+      <figcaption>England Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/harare-zimbabwe-temple.jpg" alt="Harare Zimbabwe Temple" width="300">
+      <figcaption>Harare Zimbabwe Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/Johannesburg South Africa.jpg" alt="Johannesburg South Africa Temple" width="300">
+      <figcaption>Johannesburg South Africa Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/USA temple.jpeg" alt="USA Temple" width="300">
+      <figcaption>USA Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/Vancouver-British-Columbia-Canada-Temple.jpg" alt="Vancouver BC Canada Temple" width="300">
+      <figcaption>Vancouver British Columbia Canada Temple</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>©2025 🌸 Cynthia Moyo 🇿🇼 Harare, Zimbabwe</p>
+    <div class="last-modified">
+      <span>Last Modification:</span>
+      <span id="lastModified"></span>
+    </div>
+  </footer>
+
+  <script>
+    // Show last modified date
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
