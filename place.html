@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zimbabwe</title>
+  <link rel="stylesheet" href="styles/place.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Zimbabwe</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/zimbabwe.jpg" alt="Zimbabwe" />
+    </section>
+
+    <div class="content-container">
+      <section class="data">
+        <h2>General Information</h2>
+        <table>
+          <tr><td><strong>Area:</strong></td><td>150,871 sq</td></tr>
+          <tr><td><strong>Population:</strong></td><td>17,375,285</td></tr>
+          <tr><td><strong>Capital:</strong></td><td>Harare</td></tr>
+          <tr><td><strong>Languages:</strong></td><td>English, Shona</td></tr>
+          <tr><td><strong>Currency:</strong></td><td>ZiG</td></tr>
+          <tr><td><strong>Time Zone:</strong></td><td>GMT+2</td></tr>
+          <tr><td><strong>Calling Code:</strong></td><td>+231</td></tr>
+          <tr><td><strong>Internet TLD:</strong></td><td>.ZW</td></tr>
+        </table>
+      </section>
+
+      <section class="weather">
+        <h2>Current Weather</h2>
+        <div class="weather-info">
+          <img src="images/weather.svg" alt="Weather Icon" />
+          <p><strong>Temperature:</strong> <span id="temperature">10</span>°C</p>
+          <p><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></p>
+          <p><strong>Wind Speed:</strong> <span id="wind">5 km/h</span></p>
+          <p><strong>Wind Chill:</strong> <span id="windChill">9.8</span>°C</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>🌺 Created by Cynthia Moyo | ZW Zimbabwe | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+
+</body>
+</html>
+
+
