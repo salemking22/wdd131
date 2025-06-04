@@ -1,188 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zimbabwe</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #ededed;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 20px auto;
-      background: #fff;
-      border: 6px solid #ededed;
-      box-sizing: border-box;
-    }
-    .header {
-      background: #d32f2f;
-      color: #fff;
-      text-align: center;
-      padding: 2.2rem 0 1.5rem 0;
-      font-size: 2.7rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      border-bottom: 8px solid #198754;
-      position: relative;
-    }
-    .main-bg {
-      position: relative;
-      width: 100%;
-      min-height: 400px;
-      background: url('images/hero-large.webp') center center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2.5rem 0 2.5rem 0;
-      overflow: hidden;
-    }
-    .data-card, .weather-card {
-      background: rgba(255,255,255,0.95);
-      border-radius: 7px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.13);
-      padding: 1.5rem 2.2rem 1.2rem 2.2rem;
-      min-width: 320px;
-      max-width: 370px;
-      position: absolute;
-      z-index: 2;
-    }
-    .data-card {
-      top: 25px;
-      left: 40px;
-    }
-    .weather-card {
-      bottom: 25px;
-      right: 40px;
-    }
-    .card-title {
-      background: #198754;
-      color: #fff;
-      font-size: 1.3rem;
-      font-weight: bold;
-      padding: 0.32rem 1.2rem;
-      border-radius: 5px 5px 0 0;
-      margin: -1.5rem -2.2rem 1.1rem -2.2rem;
-      box-shadow: 0 2px 8px rgba(25,135,84,0.07);
-      display: inline-block;
-    }
-    .data-list {
-      font-size: 1.09rem;
-      line-height: 2.1;
-    }
-    .data-list strong {
-      width: 110px;
-      display: inline-block;
-      color: #222;
-    }
-    .weather-info {
-      font-size: 1.09rem;
-      line-height: 2.1;
-    }
-    .weather-row {
-      display: flex;
-      align-items: center;
-      gap: 0.6em;
-    }
-    .weather-icon {
-      width: 22px;
-      height: 22px;
-      margin-left: 7px;
-      vertical-align: middle;
-    }
-    .footer {
-      background: #d32f2f;
-      color: #fff;
-      text-align: center;
-      padding: 1.1rem 0 0.7rem 0;
-      font-size: 1rem;
-      border-top: 6px solid #198754;
-      margin-top: -6px;
-    }
-    @media (max-width: 950px) {
-      .main-bg {
-        min-height: 350px;
-        padding: 2rem 0;
-      }
-      .data-card, .weather-card {
-        position: static;
-        margin: 1.2rem auto;
-        display: block;
-      }
-      .main-bg {
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-      }
-    }
-    @media (max-width: 600px) {
-      .header {
-        font-size: 2rem;
-        padding: 1.3rem 0 1rem 0;
-      }
-      .main-bg {
-        padding: 1rem 0 1.5rem 0;
-        min-height: 250px;
-      }
-      .data-card, .weather-card {
-        padding: 1rem 0.7rem 0.7rem 0.7rem;
-        min-width: 0;
-        max-width: 100%;
-      }
-      .card-title {
-        margin: -1rem -0.7rem 1rem -0.7rem;
-        font-size: 1.1rem;
-      }
-      .footer {
-        font-size: 0.9rem;
-        padding: 0.7rem 0 0.4rem 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimbabwe Info</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      Zimbabwe
-    </div>
-    <div class="main-bg">
-      <div class="data-card">
-        <div class="card-title">Data</div>
-        <div class="data-list">
-          <div><strong>Area:</strong> 150,871 sq km</div>
-          <div><strong>Population:</strong> 17,375,285</div>
-          <div><strong>Capital:</strong> Harare</div>
-          <div><strong>Languages:</strong> English, Shona</div>
-          <div><strong>Currency:</strong> ZiG</div>
-          <div><strong>Time Zone:</strong> GMT+2</div>
-          <div><strong>Calling Code:</strong> +263</div>
-          <div><strong>Internet TLD:</strong> .zw</div>
+    <header class="main-bg">
+        <div class="content-overlay">
+            <div class="title-container">
+                <div class="title-tab">Zimbabwe</div>
+                <div class="subtitle-tab"></div>
+            </div>
+
+            <div class="card-container">
+                <div class="data-card">
+                    <div class="card-title">Data</div>
+                    <p><strong>Area:</strong> 150,871 sq km</p>
+                    <p><strong>Population:</strong> 17,375,285</p>
+                    <p><strong>Capital:</strong> Harare</p>
+                    <p><strong>Languages:</strong> English, Shona</p>
+                    <p><strong>Currency:</strong> ZiG</p>
+                </div>
+                <div class="weather-card">
+                    <div class="card-title">Weather</div>
+                    <p><strong>Temperature:</strong> 10°C</p>
+                    <p><strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> 5 km/h</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="weather-card">
-        <div class="card-title weather-row">
-          Weather
-          <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
-        </div>
-        <div class="weather-info">
-          <div><strong>Temperature:</strong> 10°C</div>
-          <div><strong>Conditions:</strong> Partly Cloudy</div>
-          <div><strong>Wind:</strong> 5 km/h</div>
-          <div><strong>Wind Chill:</strong> 9.8°C</div>
-        </div>
-      </div>
+    </header>
+
+   <footer>
+    <p>©2025 🌸 Cynthia Moyo 🇿🇼 Harare, Zimbabwe</p>
+    <div class="last-modified">
+      <span>Last Modification:</span>
+      <span id="lastModified"></span>
     </div>
-    <div class="footer">
-      ©2025 🌺 Cynthia Moyo &nbsp;|&nbsp; ZW Zimbabwe <br>
-      Last Modified: <span id="lastModified"></span>
-    </div>
-  </div>
+  </footer>
+
   <script>
-    document.getElementById('lastModified').textContent = document.lastModified;
+    document.getElementById("lastModified").textContent = document.lastModified;
   </script>
+
 </body>
 </html>
+
+
+
+
 
