@@ -1,7 +1,6 @@
-/* Root Variables */
 :root {
-  --primary-color: #006400;   /* dark green */
-  --accent-color: #ff0000;    /* red */
+  --primary-color: #006400;  
+  --accent-color: #ff0000;    
   --background-color: #f9f9f9;
   --text-color: #333;
 }
@@ -13,7 +12,6 @@ body {
   background: #ededed;
 }
 
-/* Header */
 .page-header {
   width: 100vw;
   margin: 0;
@@ -55,7 +53,6 @@ body {
   z-index: 1;
 }
 
-/* Hero Image Container */
 .main-bg {
   position: relative;
   width: 90%;
@@ -70,7 +67,6 @@ body {
   overflow: hidden;
 }
 
-/* Visually hidden heading for accessibility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -82,7 +78,6 @@ body {
   border: 0;
 }
 
-/* Data Card */
 .data-card {
   position: absolute;
   top: 20px;
@@ -96,7 +91,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Weather Card */
 .weather-card {
   position: absolute;
   bottom: 20px;
@@ -115,7 +109,6 @@ body {
   height: auto;
 }
 
-/* Card Title Underline */
 .card-title::after {
   content: '';
   display: block;
@@ -126,7 +119,6 @@ body {
   border-radius: 2px;
 }
 
-/* Footer */
 footer {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -140,7 +132,6 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Responsive Fixes */
 @media (max-width: 600px) {
   .main-bg {
     flex-direction: column;
@@ -160,8 +151,12 @@ footer {
     font-size: 1.1rem;
     text-align: center;
   }
-}
 
+  .main-bg picture img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
 
 
 
