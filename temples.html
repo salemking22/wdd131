@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
+  <meta name="description" content="Temple Album showing large views of temples around the world.">
+  <meta name="author" content="Cynthia Moyo">
+  <title>Temple Album - Large View</title>
   <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
 </head>
 <body>
 
@@ -23,32 +26,58 @@
   </header>
 
   <main>
-    <h1>HOME</h1>
+    <h2>Large Temple Views</h2>
+     <div class="temple-grid" id="templeGrid">
+       </div>
+       
 
-    <figure>
-      <img src="images/England temple.jpg" alt="England temple in the United Kingdom" width="300">
-      <figcaption>England Temple</figcaption>
-    </figure>
 
-    <figure>
-      <img src="images/harare-zimbabwe-temple.jpg" alt="Harare Zimbabwe Temple" width="300">
-      <figcaption>Harare Zimbabwe Temple</figcaption>
-    </figure>
+      <figure>
+        <img src="images/England temple.jpg" alt="England Temple in the United Kingdom" width="300">
+        <figcaption>England Temple</figcaption>
+      </figure>
 
-    <figure>
-      <img src="images/Johannesburg South Africa.jpg" alt="Johannesburg South Africa Temple" width="300">
-      <figcaption>Johannesburg South Africa Temple</figcaption>
-    </figure>
+      <figure>
+        <img src="images/harare-zimbabwe-temple.jpg" alt="Harare Zimbabwe Temple" width="300">
+        <figcaption>Harare Zimbabwe Temple</figcaption>
+      </figure>
 
-    <figure>
-      <img src="images/USA temple.jpeg" alt="USA Temple" width="300">
-      <figcaption>USA Temple</figcaption>
-    </figure>
+      <figure>
+        <img src="images/Johannesburg South Africa.jpg" alt="Johannesburg South Africa Temple" width="300">
+        <figcaption>Johannesburg South Africa Temple</figcaption>
+      </figure>
 
-    <figure>
-      <img src="images/Vancouver-British-Columbia-Canada-Temple.jpg" alt="Vancouver British Columbia Canada Temple" width="300">
-      <figcaption>Vancouver British Columbia Canada Temple</figcaption>
-    </figure>
+      <figure>
+        <img src="images/USA temple.jpeg" alt="USA Temple" width="300">
+        <figcaption>USA Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Vancouver-British-Columbia-Canada-Temple.jpg" alt="Vancouver British Columbia Canada Temple" width="300">
+        <figcaption>Vancouver BC Canada Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Nairobi.Kenya.temple.jpg" alt="Nairobi Kenya Temple" width="300">
+        <figcaption>Nairobi Kenya Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Oakland.Califonia. temple.jpg" alt="Oakland California Temple" width="300">
+        <figcaption>Oakland California Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Manila.Phillipines.temple.jpg" alt="Manila Philippines Temple" width="300">
+        <figcaption>Manila Philippines Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Houston.Texas.temple.jpg" alt="Houston Texas Temple" width="300">
+        <figcaption>Houston Texas Temple</figcaption>
+      </figure>
+
+    </div>
   </main>
 
   <footer>
@@ -59,9 +88,10 @@
     </div>
   </footer>
 
+  <script defer src="scripts/temples.js"></script>
   <script>
-    // Show last modified date
     document.getElementById("lastModified").textContent = document.lastModified;
   </script>
 </body>
 </html>
+
