@@ -1,27 +1,31 @@
+:root {
+  --primary-color: #8B0000;
+  --accent-color: #198754;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #ededed;
 }
 
 .page-header {
-  width: 100vw;               /* full width */
+  width: 100vw;
   margin: 0;
   padding: 1rem 0;
-  background-color: #8B0000; /* deep red background */
+  background-color: var(--primary-color);
   box-sizing: border-box;
   text-align: center;
   position: relative;
   font-family: 'Roboto', sans-serif;
-  border-radius: 0;           /* no rounding on edges */
+  border-radius: 0;
 }
 
 .page-header h1 {
   margin: 0;
   font-size: 2.5rem;
   font-weight: bold;
-  color: black;              /* black text */
+  color: black;
   position: relative;
   z-index: 2;
 }
@@ -29,7 +33,7 @@ body {
 .red-tab {
   width: 100px;
   height: 6px;
-  background-color: #d32f2f; /* Bold red */
+  background-color: #d32f2f;
   margin: 0 auto;
   border-radius: 3px;
   position: relative;
@@ -38,9 +42,9 @@ body {
 }
 
 .green-bar {
-  width: 100vw;               /* full width */
+  width: 100vw;
   height: 12px;
-  background-color: #2e7d32; /* Deep green */
+  background-color: #2e7d32;
   margin: 0;
   border-radius: 0 0 8px 8px;
   position: relative;
@@ -48,7 +52,6 @@ body {
   z-index: 1;
 }
 
-/* Hero Image Container */
 .main-bg {
   position: relative;
   width: 90%;
@@ -63,7 +66,6 @@ body {
   overflow: hidden;
 }
 
-/* Section Heading */
 .section-heading {
   position: absolute;
   top: 10px;
@@ -75,7 +77,6 @@ body {
   z-index: 1;
 }
 
-/* Data Card */
 .data-card {
   position: absolute;
   top: 20px;
@@ -84,12 +85,11 @@ body {
   color: black;
   padding: 0.8rem;
   border-radius: 8px;
-  width: 180px; /* reduced width */
+  width: 180px;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Weather Card */
 .weather-card {
   position: absolute;
   bottom: 20px;
@@ -98,20 +98,18 @@ body {
   color: black;
   padding: 0.8rem;
   border-radius: 8px;
-  width: 180px; /* smaller width for weather card */
+  width: 180px;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Weather icon size */
 .weather-card img {
   width: 40px;
   height: auto;
 }
 
-/* Card Title */
 .card-title {
-  background-color: #198754;
+  background-color: var(--accent-color);
   color: #fff;
   font-size: 1.3rem;
   font-weight: bold;
@@ -121,7 +119,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
 footer {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -130,11 +127,32 @@ footer {
   font-size: 0.9rem;
 }
 
+footer::after {
+  content: "🌍";
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
 .last-modified {
   margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 
+@media (max-width: 600px) {
+  .main-bg {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .data-card,
+  .weather-card {
+    position: static;
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
 
 
 
