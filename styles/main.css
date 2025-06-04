@@ -6,21 +6,22 @@ body {
 }
 
 .page-header {
-  width: 100vw;
+  width: 100vw;               /* full width */
   margin: 0;
   padding: 1rem 0;
-  background-color: #8B0000;
+  background-color: #8B0000; /* deep red background */
   box-sizing: border-box;
   text-align: center;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  border-radius: 0;           /* no rounding on edges */
 }
 
 .page-header h1 {
   margin: 0;
   font-size: 2.5rem;
   font-weight: bold;
-  color: black;
+  color: black;              /* black text */
   position: relative;
   z-index: 2;
 }
@@ -28,7 +29,7 @@ body {
 .red-tab {
   width: 100px;
   height: 6px;
-  background-color: #d32f2f;
+  background-color: #d32f2f; /* Bold red */
   margin: 0 auto;
   border-radius: 3px;
   position: relative;
@@ -37,9 +38,9 @@ body {
 }
 
 .green-bar {
-  width: 100vw;
+  width: 100vw;               /* full width */
   height: 12px;
-  background-color: #2e7d32;
+  background-color: #2e7d32; /* Deep green */
   margin: 0;
   border-radius: 0 0 8px 8px;
   position: relative;
@@ -62,16 +63,16 @@ body {
   overflow: hidden;
 }
 
-/* Visually hidden heading for accessibility */
-.visually-hidden {
+/* Section Heading */
+.section-heading {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  border: 0;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  z-index: 1;
 }
 
 /* Data Card */
@@ -83,7 +84,7 @@ body {
   color: black;
   padding: 0.8rem;
   border-radius: 8px;
-  width: 180px;
+  width: 180px; /* reduced width */
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -97,11 +98,12 @@ body {
   color: black;
   padding: 0.8rem;
   border-radius: 8px;
-  width: 180px;
+  width: 180px; /* smaller width for weather card */
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Weather icon size */
 .weather-card img {
   width: 40px;
   height: auto;
@@ -132,6 +134,7 @@ footer {
   margin-top: 0.5rem;
   font-size: 0.8rem;
 }
+
 
 
 
