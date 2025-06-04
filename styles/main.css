@@ -1,3 +1,4 @@
+/* General Reset */
 body {
     margin: 0;
     padding: 0;
@@ -5,10 +6,11 @@ body {
     background: #ededed;
 }
 
+/* Hero Image Background */
 .main-bg {
     position: relative;
     width: 100%;
-    min-height: 650px; 
+    min-height: 650px;
     background: url('../images/hero-large.webp') center center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -17,6 +19,7 @@ body {
     padding: 25px;
 }
 
+/* Zimbabwe Title Container */
 .title-container {
     position: absolute;
     top: 0;
@@ -28,8 +31,9 @@ body {
     justify-content: center;
 }
 
+/* Full-width Red Tab */
 .title-tab {
-    background-color: #c8102e; 
+    background-color: #c8102e;
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
@@ -39,76 +43,83 @@ body {
     width: 100%;
 }
 
+/* Full-width Green Tab Beneath */
 .subtitle-tab {
-    background-color: #004d26; 
+    background-color: #004d26;
     width: 100%;
-    height: 15px; 
+    height: 15px;
 }
 
+/* Card Container */
 .card-container {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    padding: 0 5%; 
-    flex-direction: column; 
+    padding: 0 5%;
+    flex-direction: column;
 }
 
-
+/* Data Card - Positioned at Far Left */
 .data-card {
     background-color: white;
     color: black;
     font-family: 'Arial', sans-serif;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    padding: 1rem; 
-    width: 250px; 
+    padding: 1rem;
+    width: 250px;
     text-align: left;
     border: 3px solid #004d26;
     position: absolute;
     top: 15%;
-    left: 2%; 
+    left: 2%;
 }
 
+/* Weather Card - Positioned Below at Far Right */
 .weather-card {
     background-color: white;
     color: black;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    padding: 1rem; 
-    width: 250px; 
+    padding: 1rem;
+    width: 250px;
     text-align: left;
     border: 3px solid #004d26;
     position: absolute;
     top: 50%;
-    right: 2%; 
+    right: 2%;
 }
 
+/* Card Title Bar */
 .card-title {
     background-color: #006b3f;
     color: white;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     font-weight: bold;
-    padding: 0.6rem; 
+    padding: 0.6rem;
     text-align: left;
     border-radius: 6px 6px 0 0;
 }
 
+/* Footer */
 footer {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #c8102e; 
+    background: #c8102e;
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    border-top: 4px solid #004d26; 
+    border-top: 4px solid #004d26;
 }
 
+/* Last Modified */
 #lastModified {
     font-size: 0.8rem;
     color: white;
     margin-top: 5px;
 }
+
