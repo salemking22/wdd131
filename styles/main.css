@@ -1,11 +1,7 @@
-:root {
-  --primary-color: #8B0000;
-  --accent-color: #198754;
-}
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
   background: #ededed;
 }
 
@@ -13,12 +9,11 @@ body {
   width: 100vw;
   margin: 0;
   padding: 1rem 0;
-  background-color: var(--primary-color);
+  background-color: #8B0000;
   box-sizing: border-box;
   text-align: center;
   position: relative;
   font-family: 'Roboto', sans-serif;
-  border-radius: 0;
 }
 
 .page-header h1 {
@@ -52,6 +47,7 @@ body {
   z-index: 1;
 }
 
+/* Hero Image Container */
 .main-bg {
   position: relative;
   width: 90%;
@@ -66,17 +62,19 @@ body {
   overflow: hidden;
 }
 
-.section-heading {
+/* Visually hidden heading for accessibility */
+.visually-hidden {
   position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  z-index: 1;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
 
+/* Data Card */
 .data-card {
   position: absolute;
   top: 20px;
@@ -90,6 +88,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Weather Card */
 .weather-card {
   position: absolute;
   bottom: 20px;
@@ -108,8 +107,9 @@ body {
   height: auto;
 }
 
+/* Card Title */
 .card-title {
-  background-color: var(--accent-color);
+  background-color: #198754;
   color: #fff;
   font-size: 1.3rem;
   font-weight: bold;
@@ -119,6 +119,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -127,31 +128,9 @@ footer {
   font-size: 0.9rem;
 }
 
-footer::after {
-  content: "🌍";
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-}
-
 .last-modified {
   margin-top: 0.5rem;
   font-size: 0.8rem;
-}
-
-@media (max-width: 600px) {
-  .main-bg {
-    flex-direction: column;
-    height: auto;
-    padding: 2rem 0;
-  }
-
-  .data-card,
-  .weather-card {
-    position: static;
-    width: 90%;
-    margin: 1rem auto;
-  }
 }
 
 
