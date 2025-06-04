@@ -13,6 +13,7 @@ body {
   background: #ededed;
 }
 
+/* Header */
 .page-header {
   width: 100vw;
   margin: 0;
@@ -20,7 +21,6 @@ body {
   background-color: #8B0000;
   box-sizing: border-box;
   text-align: center;
-  position: relative;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -115,7 +115,7 @@ body {
   height: auto;
 }
 
-/* Card Title */
+/* Card Title Underline */
 .card-title::after {
   content: '';
   display: block;
@@ -140,24 +140,28 @@ footer {
   font-size: 0.8rem;
 }
 
+/* Responsive Fixes */
 @media (max-width: 600px) {
+  .main-bg {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+  }
+
   .data-card,
   .weather-card {
     position: static;
     width: 100%;
-    margin: 1rem auto;
-  }
-
-  .main-bg {
-    height: auto;
-    flex-direction: column;
-    padding: 1rem;
+    margin: 1rem 0;
   }
 
   .card-title {
     font-size: 1.1rem;
+    text-align: center;
   }
 }
+
 
 
 
