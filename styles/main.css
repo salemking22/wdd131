@@ -1,8 +1,6 @@
 :root {
-  --primary-color: #006400;  
-  --accent-color: #ff0000;    
-  --background-color: #f9f9f9;
-  --text-color: #333;
+  --primary-color: #006400;
+  --accent-color: #ff0000;
 }
 
 body {
