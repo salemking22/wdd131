@@ -1,4 +1,3 @@
-/* General Reset */
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@ body {
     background: #ededed;
 }
 
-/* Hero Image Background */
 .main-bg {
     position: relative;
     width: 100%;
@@ -19,7 +17,6 @@ body {
     padding: 25px;
 }
 
-/* Zimbabwe Title Container */
 .title-container {
     position: absolute;
     top: 0;
@@ -31,7 +28,6 @@ body {
     justify-content: center;
 }
 
-/* Full-width Red Tab */
 .title-tab {
     background-color: #c8102e;
     color: white;
@@ -43,14 +39,12 @@ body {
     width: 100%;
 }
 
-/* Full-width Green Tab Beneath */
 .subtitle-tab {
     background-color: #004d26;
     width: 100%;
     height: 15px;
 }
 
-/* Card Container */
 .card-container {
     display: flex;
     justify-content: space-between;
@@ -60,7 +54,6 @@ body {
     flex-direction: column;
 }
 
-/* Data Card - Positioned at Far Left */
 .data-card {
     background-color: white;
     color: black;
@@ -76,7 +69,6 @@ body {
     left: 2%;
 }
 
-/* Weather Card - Positioned Below at Far Right */
 .weather-card {
     background-color: white;
     color: black;
@@ -91,7 +83,6 @@ body {
     right: 2%;
 }
 
-/* Card Title Bar */
 .card-title {
     background-color: #006b3f;
     color: white;
@@ -102,7 +93,6 @@ body {
     border-radius: 6px 6px 0 0;
 }
 
-/* Footer */
 footer {
     position: absolute;
     bottom: 0;
@@ -116,10 +106,8 @@ footer {
     border-top: 4px solid #004d26;
 }
 
-/* Last Modified */
 #lastModified {
     font-size: 0.8rem;
     color: white;
     margin-top: 5px;
 }
-
