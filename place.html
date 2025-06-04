@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Zimbabwe Info - Learn about Zimbabwe's geography, population, and weather.">
-    <meta name="author" content="Cynthia Moyo">
-    <title>Zimbabwe Info</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zimbabwe Info - Learn about Zimbabwe's geography, population, and weather." />
+  <meta name="author" content="Cynthia Moyo" />
+  <title>Zimbabwe Info</title>
 
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-    <header class="main-bg">
-        <div class="content-overlay">
-            <div class="title-container">
-               <h1>Zimbabwe Info</h1>
-                <div class="title-tab">Zimbabwe</div>
-                <div class="subtitle-tab"></div>
-            </div>
-        </div>
+  <main>
+    <header class="page-header">
+      <h1>Zimbabwe</h1>
+      <div class="red-tab"></div>
+      <div class="green-bar"></div>
     </header>
 
-    <main>
-        <div class="card-container">
-            <div class="data-card">
-                <div class="card-title">Data</div>
-                <p><strong>Area:</strong> 150,871 sq km</p>
-                <p><strong>Population:</strong> 17,375,285</p>
-                <p><strong>Capital:</strong> Harare</p>
-                <p><strong>Languages:</strong> English, Shona</p>
-                <p><strong>Currency:</strong> ZiG</p>
-            </div>
-            <div class="weather-card">
-                <div class="card-title">Weather</div>
-                <img src="images/weather.svg" alt="Weather Icon">
-                <p><strong>Temperature:</strong> 10°C</p>
-                <p><strong>Conditions:</strong> Partly Cloudy</p>
-                <p><strong>Wind:</strong> 5 km/h</p>
-            </div>
-        </div>
+    <section class="main-bg">
+      <h2 class="visually-hidden">Zimbabwe Overview Section</h2>
+      
+      <div class="data-card">
+        <div class="card-title">Data</div>
+        <p><strong>Area:</strong> 150,871 sq km</p>
+        <p><strong>Population:</strong> 17,375,285</p>
+        <p><strong>Capital:</strong> Harare</p>
+        <p><strong>Languages:</strong> English, Shona</p>
+        <p><strong>Currency:</strong> ZiG</p>
+      </div>
 
-<figure>
-  <img 
-    src="images/hero-large.webp" 
-    srcset="images/zimbabwe-1096.webp 1096w" 
-    sizes="(max-width: 1096px) 100vw, 1096px" 
-    width="1096" 
-    height="400" 
-    alt="">
-</figure>
-    </main>
+      <div class="weather-card">
+        <div class="card-title">Weather</div>
+        <img src="images/weather.svg" alt="Weather Icon" />
+        <p><strong>Temperature:</strong> 10°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 5 km/h</p>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>©2025 🌸 Cynthia Moyo 🇿🇼 Harare, Zimbabwe</p>
-        <div class="last-modified">
-            <span>Last Modification:</span>
-            <span id="lastModified"></span>
-        </div>
-    </footer>
+  <footer>
+    <p>©2025 🌸 Cynthia Moyo 🇿🇼 Harare, Zimbabwe</p>
+    <div class="last-modified">
+      <span>Last Modification:</span>
+      <span id="lastModified"></span>
+    </div>
+  </footer>
 
-    <script src="scripts/main.js" defer></script>
-
+  <script src="scripts/main.js" defer></script>
 </body>
 </html>
-
 
 
 
