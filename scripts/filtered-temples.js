@@ -1,4 +1,3 @@
-// ✅ Temple Data ArrayAdd commentMore actions
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -72,7 +71,6 @@ const temples = [
   }
 ];
 
-// ✅ Function to Render Temple Cards
 function outputTemples(templesList) {
   const container = document.getElementById("temple-cards");
   container.innerHTML = ""; // clear current content
@@ -93,10 +91,8 @@ function outputTemples(templesList) {
   });
 }
 
-// ✅ Initial load
 outputTemples(temples);
 
-// ✅ Filters
 document.getElementById("home").addEventListener("click", () => outputTemples(temples));
 
 document.getElementById("old").addEventListener("click", () => {
