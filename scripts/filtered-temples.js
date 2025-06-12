@@ -1,4 +1,4 @@
-// ✅ Temple Data Array
+// ✅ Temple Data ArrayAdd commentMore actions
 const temples = [
   {
     templeName: "Aba Nigeria",
