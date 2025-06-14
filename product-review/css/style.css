@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  color: #333;
+}
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+label, legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+input[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #efac3e;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
