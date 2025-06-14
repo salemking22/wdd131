@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="review-title">Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <label for="productName">Product Name<span>*</span></label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating<span>*</span></legend>
+        <label><input type="radio" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation<span>*</span></label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset class="features">
+        <legend>Which features did you find useful in the product?</legend>
+         <p class="note">(Check all that apply)</p>
+        <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
+        <label><input type="checkbox" id="feature2" name="features" value="design"> Design</label>
+        <label><input type="checkbox" id="feature3" name="features" value="battery"> Battery Life</label>
+        <label><input type="checkbox" id="feature4" name="features" value="ease"> Ease of Use</label>
+        <label><input type="checkbox" id="feature5" name="features" value="performance"> Performance</label>
+      </fieldset>
+
+      <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
+      <textarea id="reviewText" name="reviewText" rows="4" cols="30" placeholder="Tell us what you think..."></textarea>
+
+      <label for="userName">Your Name <span class="optional">(optional)</span></label>
+      <input type="text" id="userName" name="userName" placeholder="Optional">
+
+       <div class="submit-center">
+      <input type="submit" value="Post Review">
+      </div>
+    </form>
+  </main>
+
+<footer>
+  <div class="footer-box">
+    <p class="footer-highlight">©2025 🌸 Cynthia Moyo 🌸 Harare</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
