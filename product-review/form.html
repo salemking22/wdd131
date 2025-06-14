@@ -8,12 +8,11 @@
 </head>
 <body>
   <header>
-    <h1>Product Review</h1>
+    <h1 class="review-title">Product Review</h1>
   </header>
 
   <main>
     <form method="get" action="review.html">
-      <!-- Product Name -->
       <label for="productName">Product Name<span>*</span></label>
       <select id="productName" name="productName" required>
         <option value="" disabled selected>Select a Product ...</option>
@@ -31,27 +30,37 @@
       <label for="installDate">Date of Installation<span>*</span></label>
       <input type="date" id="installDate" name="installDate" required>
 
-      <fieldset>
-        <legend>Useful Features</legend>
+      <fieldset class="features">
+        <legend>Which features did you find useful in the product?</legend>
+         <p class="note">(Check all that apply)</p>
         <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
         <label><input type="checkbox" id="feature2" name="features" value="design"> Design</label>
         <label><input type="checkbox" id="feature3" name="features" value="battery"> Battery Life</label>
+        <label><input type="checkbox" id="feature4" name="features" value="ease"> Ease of Use</label>
+        <label><input type="checkbox" id="feature5" name="features" value="performance"> Performance</label>
       </fieldset>
 
-      <label for="reviewText">Written Review</label>
+      <label for="reviewText">Written Review <span class="optional">(Optional)</span></label>
       <textarea id="reviewText" name="reviewText" rows="4" cols="30" placeholder="Tell us what you think..."></textarea>
 
-      <label for="userName">Your Name</label>
+      <label for="userName">Your Name <span class="optional">(optional)</span></label>
       <input type="text" id="userName" name="userName" placeholder="Optional">
 
-      <input type="submit" value="Submit Review">
+       <div class="submit-center">
+      <input type="submit" value="Post Review">
+      </div>
     </form>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Salem Web Projects</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+<footer>
+  <div class="footer-box">
+    <p class="footer-highlight">©2025 🌸 Cynthia Moyo 🌸 Harare</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 </body>
 </html>
