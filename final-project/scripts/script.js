@@ -1,47 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  if (!form) return;
 
-  // Load saved data into form fields
-  loadFormData();
+  const nameField = document.getElementById("name");
+  const emailField = document.getElementById("email");
+  const messageField = document.getElementById("message");
+  const charCount = document.getElementById("charCount");
 
-  // Listen for form submission
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    if (!validateForm(name, email, message)) {
-      alert('Please enter a valid name (2+ chars), valid email, and message (10+ chars).');
-      return;
-    }
-
-    saveFormData(name, email, message);
-    showConfirmation(name);
+  messageField.addEventListener("input", () => {
+    charCount.textContent = `Characters: ${messageField.value.length}`;
   });
 
-  function loadFormData() {
-    const savedData = JSON.parse(localStorage.getItem('contactFormData')) || {};
-    form.name.value = savedData.name || '';
-    form.email.value = savedData.email || '';
-    form.message.value = savedData.message || '';
+  const savedData = JSON.parse(localStorage.getItem("contactForm"));
+  if (savedData) {
+    nameField.value = savedData.name || "";
+    emailField.value = savedData.email || "";
+    messageField.value = savedData.message || "";
   }
 
-  function saveFormData(name, email, message) {
-    const formData = { name, email, message };
-    localStorage.setItem('contactFormData', JSON.stringify(formData));
-  }
-
-  function validateForm(name, email, message) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return name.length >= 2 && emailRegex.test(email) && message.length >= 10;
-  }
-
-  function showConfirmation(name) {
-    const confirmation = `
-      <p>Thank you, <strong>${name}</strong>! Your message has been received.</p>
-    `;
-    form.innerHTML = confirmation;
-  }
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = {
+      name: nameField.value,
+      email: emailField.value,
+      message: messageField.value,
+    };
+    localStorage.setItem("contactForm", JSON.stringify(formData));
+    alert("Message saved locally!");
+    form.reset();
+    charCount.textContent = "Characters: 0";
+  });
 });
